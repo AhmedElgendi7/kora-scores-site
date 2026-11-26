@@ -1,3 +1,7 @@
 # ماتش داي
 
-A clean Arabic RTL football scores site. The deployable Next.js application and GitHub Pages workflow are added in the next commit.
+موقع نتائج ومواعيد مباريات عربي باتجاه RTL، مبني بـ Next.js static export ومهيأ لـ GitHub Pages.
+
+الموقع يستخدم بيانات تجريبية محفوظة في `src/lib/football/data.ts`. لا يوجد مفتاح API في الكود أو الملفات العامة. عند إضافة مصدر بيانات فعلي، أضف المفتاح في إعداد build آمن ثم ولّد البيانات أثناء البناء، ولا تضع المفتاح في واجهة المتصفح.
+
+GitHub Actions يثبت الاعتماديات ويبني مجلد `out` ثم ينشره على Pages عند الدفع إلى `master`.
